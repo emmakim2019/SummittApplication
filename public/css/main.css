@@ -1,0 +1,634 @@
+/******************* general **********************/
+.header-contacts{
+	float: right;
+    width: auto;
+    text-align: right;
+    color: #fff;
+    padding-top: 10px;
+}
+.header-contacts li{
+	margin-bottom: .5em;
+}
+#footer{
+	padding-top: 30px;
+}
+.footer-title{
+	border-bottom: 1px solid #0574a8;
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+.email-title{
+	border-bottom: 1px solid #0574a8;
+    padding: 1em 0;
+    margin: 1em 0;
+}
+.footer-flags img {
+    max-width: 25px;
+    height: auto;
+    margin: 0 4px 0 0;
+}
+.auth{
+    margin-bottom: 5rem;
+}
+div.auth-header {
+    border-bottom: 1px solid #005187;
+    padding-bottom: 10px;
+    margin: 0 7rem 2rem 3rem;
+    text-align: center;
+}
+.auth-control, .auth-btn{
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+span.asterick {
+    color: red;
+    padding-left: 5px;
+    font-size: 20px;
+}
+#referee3 .border-line{
+       padding-top: 1rem; 
+}
+.modal-content.error-modal,.modal-content.message-modal{
+    background: #fff;
+}
+.modal-content.error-modal .modal-header{
+    background: #DD7D15;
+}
+.modal-content.message-modal .modal-header{
+    background: #3069AB;
+}
+.remove_referee {
+    position: relative;
+    top: -10px;
+}
+
+#back-top,
+#support {
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    z-index: 1000;
+    border: 2px solid #DD7D15
+}
+
+#back-top {
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background: #3069AB 0% 0% no-repeat padding-box;
+    opacity: 0;
+    visibility: hidden
+}
+
+#support {
+    bottom: 10px;
+    right: 60px;
+    opacity: 1;
+    visibility: visible;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 1.5%;
+    background: #DD7D15;
+    border: 2px solid #fff
+}
+
+#back-top span {
+    display: none
+}
+
+#back-top::after {
+    content: '\f062';
+    font-family: "Font Awesome 5 Free"; font-weight: 600;
+    font-style: normal;
+    line-height: 40px;
+    color: #DD7D15
+}
+
+#support::after {
+    content: '\f059';
+    font-family: "Font Awesome 5 Free"; font-weight: 600;
+    font-style: normal;
+    line-height: 35px;
+    color: #fff;
+    padding-left: 5px
+}
+
+#back-top:hover,
+#support:hover {
+    cursor: pointer;
+    background-color: #DD7D15
+}
+
+#back-top:active,
+#support:active {
+    background-color: #DD7D15
+}
+
+#back-top.show {
+    opacity: 1;
+    visibility: visible
+}
+a.footerlinks img {
+width: 13%;
+    height: auto;
+    margin: 5px
+}
+/*********************** Profile sTEPS ****************/
+/* Hide all steps by default: */
+#regForm .tab,
+#regForm {
+  margin: 2%;
+}
+#prevBtn {
+  background-color: #bbbbbb;
+}
+/*progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: #BEBEBE;
+    font-size: 18px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+#progressbar li span{
+    color: #BEBEBE
+}
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 36px;
+    height: 36px;
+    line-height: 32px;
+    display: inline-block;
+    font-size: 18px;
+    color: #BEBEBE;
+    background: white;
+    border-radius: 25px;
+    margin: 0 5%;
+    text-align: center;
+    border: 2px solid #BEBEBE;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+}
+
+#progressbar li:first-child:after {
+    /*connector not needed before the first 
+  
+  */
+    content: none;
+}
+#progressbar li.active span{
+    color: #102245
+} 
+#progressbar li.finish span{
+    color: #A4C3E6
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before{
+    background: #102245;
+    border: 2px solid #102245;
+    color: white;
+    opacity: 1;
+}
+#progressbar li.finish:before{
+    background: #A4C3E6;
+    border: 2px solid #A4C3E6;
+    color: white;
+    opacity: 1;
+}
+.progress{
+    margin: 0 2.5%;
+    border-radius: 25px;
+}
+.tab-form{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000029;
+}
+.tab-form-header {
+    background: aqua;
+    background: #3069AB 0% 0% no-repeat padding-box;
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.multiselect-form {
+    padding: 2% 4%;
+}
+.multiinput-form {
+    padding: 2%;
+}
+/* The container */
+.fancyradio, .check-inline{
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 8px 0 0 10px;
+}
+
+/* Hide the browser's default radio button */
+.fancyradio input, .check-inline input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radiomark , .checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 1px solid #3069ab;
+}
+.radiomark{
+  border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.fancyradio:hover input ~ .radiomark,.check-inline:hover input ~ .checkmark {
+  background-color: #3069ab;
+}
+
+/* When the radio button is checked, add a blue background */
+.fancyradio input:checked ~ .radiomark,.check-inline input:checked ~ .checkmark {
+  background-color: #3069ab;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiomark:after,.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.fancyradio input:checked ~ .radiomark:after,.check-inline input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.fancyradio .radiomark:after,.check-inline .checkmark:after  {
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background: white;
+}
+.fancyradio .radiomark:after{
+    border-radius: 50%;
+}
+.fancyradio.radio-inline{
+  display: block;
+}
+.tab-form-header .selectdropdown .filter-option{
+    position: absolute;
+    left: -46rem;
+    top: 8rem;
+    width: 500px;
+    height: auto;
+    padding: 0 2rem;
+}
+.tab-form-header .selectdropdown .filter-option-inner-inner{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+}
+.tab-form-header .selectdropdown .filter-option-inner-inner .badge,.attributes .badge {
+    color: #fff;
+    background-color: #9BBBD5;
+    font-size: 12px;
+    background: #9BBBD5 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 4px;
+}
+.tab-form-header .selectdropdown button.btn.dropdown-toggle.btn-default {
+    float: right;
+    width: auto;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    height: auto;
+}
+.tab-form-header .selectdropdown button.btn.dropdown-toggle::after {
+    border-top: 0.4em solid #fff;
+    border-right: 0.4em solid transparent;
+    border-bottom: 0;
+    border-left: 0.4em solid transparent;
+}
+.tab-form-header .bootstrap-select .dropdown-menu{
+transform: translate3d(0px, 0px, 0px) !important;
+    left: -17rem !important;
+    top: 3rem !important;
+}
+.tab-form-header .bootstrap-select .dropdown-menu li .badge-success{
+    background: transparent !important;
+    color: #3069AB;
+    font-size: 14px;
+}
+.tab-form-header .bootstrap-select .dropdown-menu li a{
+  border-bottom: 1px solid #ccc;
+}
+.tab-form-header .dropdown.bootstrap-select.show-tick.selectdropdown.bs3{
+    width: auto !important;
+}
+/************************ main profile *************************/
+.aside{
+    margin-left: -20px;
+}
+.sidemenu ul,.side-applications ul{
+    box-shadow: 0px 0px 14px #00000040;
+    border-radius: 0px 8px 8px 0px;
+    opacity: 1;
+}
+.sidemenu ul li{
+    background: #3069AB 0% 0% no-repeat padding-box;
+    color: #fff;
+    text-align: left;
+    padding: 0.75rem 2.25rem;
+}
+.sidemenu ul li.active{
+    background:  #102245 0% 0% no-repeat padding-box;
+}
+.sidejobs{
+    margin: 5% 0;
+}
+.sidejobs .card-header{
+background: #A4C3E6 0% 0% no-repeat padding-box;
+opacity: 1;
+color: #102245;
+}
+.sidejobs .list-group li{
+    border-bottom: 2px solid #ccc;
+    margin: 2% 4%;
+}
+.profile{
+    padding: 1% 0;
+    margin: 0 0 2% 0;
+}
+.profile-details{
+    padding: 2%;
+}
+#pills-tab{
+    width: 100%;
+}
+.custom-select.form-control{
+    max-width: 20%;
+    height: calc(1.6em + 0.75rem + 6px);
+    border-radius: 8px 0 0 8px;
+}
+a.remove_field {
+    position: relative;
+    top: 1rem;
+}
+
+a.remove_field, span.add-email, span.add-mobile{
+    position: relative;
+    top: 6px;
+}
+#pills-tabContent{
+    width: 100%;
+}
+/****************************** cv page **************************/
+.cv-sidebar {
+    height: 100%;
+    background: #3069AB !important
+}
+.cv-image {
+    width: 100%;
+    margin: 10% 0;
+}
+.cv-image .image {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    margin: 10% auto;
+    background-size: cover;
+}
+.cv-contact {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+hr.cvline {
+    border-top: 2px solid rgba(0, 0, 0, 0.4);
+    margin: 1% 90% 2% 0;
+}
+.cvheadline h2::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid white;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #3069AB;
+    position: relative;
+    top: 28px;
+    left: -46px;
+}
+.cvupload{
+    margin: 2rem auto;
+    padding: 1%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 14px #00000040;
+    border-radius: 8px;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.cvupload .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.cvupload .right h4{
+    margin-top: 6px
+}
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-cvupload .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+/* style 6 */
+
+.inputfile-1 + label {
+    color: #f1e5e6;
+    background-color: #3069AB 0% 0% no-repeat padding-box;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    background-color: #3069AB 0% 0% no-repeat padding-box;
+}
+a.btn.buttn-download{
+    background-color: #3069ab;
+    border-radius: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cv-sidebar .nav-border {
+    border-top: 2px solid #a4c3e6;
+    clear: both;
+    width: 75%;
+    margin: auto;
+}
+.cv-title{
+    color: #fff;
+}
+.cv-contact span{
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
+}
+/***************************************** Job Application ************************/
+.questions p{
+    margin-top: 20px;
+}
+.questions label{
+    display: block;
+    margin-bottom: 5px
+}
+.side-applications .card-header{
+    background: #102245 0% 0% no-repeat padding-box;
+    color: #fff;
+}
+.applied {
+    padding: 2% 0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000026;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: center;
+    min-height: 12rem;
+    border-left: 10px solid #102245;
+}
+.applied p{
+
+    padding: 2px 7px;
+}
+.applied a.btn{
+    color: #3490dc;
+}
+button.btn.btn-rufous {
+    background: #DD7D15;
+    color: #fff;
+    padding: 4px 15px;
+}
+/*****************************Tickets***********************/
+.tickets{
+    margin: 2rem;
+}
+.tickets .tab-content{
+    margin: 4rem 2rem
+}
+.notification {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000029;
+}
+.notification-header, .notification-footer{
+    flex: 0 0 5%;
+    width: 5%;
+    height: 152px;
+    padding: 3rem 0;
+    color: #fff;
+    padding: 2rem;
+}
+.notification-content{
+    flex: 0 0 90%;
+    width: 90%;
+    padding: 2rem
+}
+.notification-header {
+    background: #dd7d15;
+}
+.notification-footer {
+    background: #ccc;
+}
+.notification-header span {
+    display: block;
+    top: 9rem;
+    transform: rotate(-90deg);
+    font-size: 2.2rem;
+    position: relative;
+}
+.notification-footer span a{
+    display: flex;
+    top: 7rem;
+    transform: rotate(-90deg);
+    font-size: 2.2rem;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+.notification-footer span .fas {
+    padding-top: 8px;
+    padding-left: 8px;
+}

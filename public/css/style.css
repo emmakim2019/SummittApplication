@@ -1,0 +1,27 @@
+.bootstrap-select>.dropdown-toggle{
+  display: block;
+  width: 100%;
+  height: calc(1.6em + 0.75rem + 6px);
+  padding: 0.375rem 0.75rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 10px #00000029;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.bootstrap-select>.dropdown-toggle span.bs-caret{
+  display: none;
+}
+.bs-searchbox .form-control{
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    height: calc(1.6em + 0.75rem + 2px) !important;
+}
+.dropdown-menu>li>a{
+  font-size: 14px
+}
