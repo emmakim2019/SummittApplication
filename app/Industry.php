@@ -6,10 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Industry extends Model
 {
-	  //Set table for model
-  protected $table = 'industry';
+	//Set table for model
+    protected $table = 'industry';
+    public $timestamps = false;
 
-   /**
+    /**
    * The attributes that are mass assignable.
    *
    * @var array
