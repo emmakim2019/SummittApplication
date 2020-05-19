@@ -94,7 +94,7 @@ Route::get('tickets','NotificationController@admintickets')->name('tickets');
 Route::post('response/ticket','NotificationController@response')->name('response.ticket');
 Route::get('staff/notification/{id}', 'NotificationController@staffNotification')->name('staff.notifications');
 
-/* categories */
+/* industry */
 Route::get('industry/add', 'IndustryController@create')->name('industry.create');
 Route::post('industry/store', 'IndustryController@store')->name('industry.store');
 Route::get('industry/json', 'IndustryController@json')->name('industry.json');
@@ -102,6 +102,15 @@ Route::get('industry', 'IndustryController@index')->name('industry.index');
 Route::get('industry/edit/{id}', 'IndustryController@edit')->name('industry.edit');
 Route::get('industry/view/{id}', 'IndustryController@view')->name('industry.view');
 Route::post('industry/update/{id}', 'IndustryController@update')->name('industry.update');
+
+
+/* currency */
+Route::get('currency/add', 'CurrencyController@create')->name('currency.create');
+Route::post('currency/store', 'CurrencyController@store')->name('currency.store');
+Route::get('currency', 'CurrencyController@index')->name('currency.index');
+Route::get('currency/edit/{id}', 'CurrencyController@edit')->name('currency.edit');
+Route::get('currency/view/{id}', 'CurrencyController@view')->name('currency.view');
+Route::post('currency/update/{id}', 'CurrencyController@update')->name('currency.update');
 
 });
 

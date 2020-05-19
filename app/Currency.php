@@ -8,7 +8,7 @@ class Currency extends Model
 {
 	  //Set table for model
   protected $table = 'currency';
-
+  public $timestamps = false;
    /**
    * The attributes that are mass assignable.
    *
